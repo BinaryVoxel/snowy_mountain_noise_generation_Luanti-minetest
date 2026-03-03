@@ -38,10 +38,15 @@ else
 	})
 end
 
-local c_stone = core.get_content_id(stone_name)
-local c_dirt = core.get_content_id(dirt_name)
-local c_snow = core.get_content_id(snow_name)
-local c_air = core.CONTENT_AIR
+-- Content IDs resolved after all mods load (nodes don't exist yet during init)
+local c_stone, c_dirt, c_snow, c_air
+
+core.register_on_mods_loaded(function()
+	c_stone = core.get_content_id(stone_name)
+	c_dirt = core.get_content_id(dirt_name)
+	c_snow = core.get_content_id(snow_name)
+	c_air = core.CONTENT_AIR
+end)
 
 ------------------------------------------------------------------------
 -- Section 2: Utility Functions
