@@ -1,0 +1,11 @@
+# Master toggle to enable or disable the mod entirely
+dla_mountain_enabled (Enable DLA Mountain) bool true
+
+# Maximum height of the mountain peak in blocks
+dla_mountain_peak_height (Peak Height) int 250 50 500
+
+# Scales the number of DLA walkers per resolution layer (higher = more detail, slower precomputation)
+dla_mountain_walker_multiplier (Walker Multiplier) float 1.0 0.1 3.0
+
+# Whether to generate the flat snow plain surrounding the mountain
+dla_mountain_snow_plain_enabled (Enable Snow Plains) bool true

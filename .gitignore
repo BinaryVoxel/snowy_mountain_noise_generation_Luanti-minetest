@@ -1,2 +1,30 @@
+# OS files
 .DS_Store
+Thumbs.db
+desktop.ini
+._*
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Lua artifacts
+*.luac
+
+# Build and temp
+build/
+tmp/
+*.log
+
+# Project — SpecSwarm working files
 .specswarm/features/
+.specswarm/sessions/
+.specswarm/build-loop.state
+
+# Project — development prompt files
+specswarm-prompts-*.md
